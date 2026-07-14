@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#120d15">
+  <meta name="description" content="Una invitación muy especial para Alisson.">
+  <meta property="og:title" content="Una noche para recordar">
+  <meta property="og:description" content="Alisson, tienes una carta muy especial…">
+  <meta property="og:type" content="website">
+  <title>Una carta para Alisson · Cita de piano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="experience">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+    <section class="opening" aria-labelledby="opening-title">
+      <p class="eyebrow">Una pequeña sorpresa para ti</p>
+      <h1 id="opening-title">Alisson, tienes una<br><em>carta muy especial…</em></h1>
+      <div class="envelope-wrap">
+        <button class="envelope-button" id="open-envelope" type="button" aria-label="Abrir la carta para Alisson" aria-controls="invitation" aria-expanded="false">
+          <span class="envelope" aria-hidden="true">
+            <span class="envelope-shadow"></span><span class="envelope-body"></span><span class="envelope-flap"></span>
+            <span class="letter-peek"><span>Para Alisson</span></span>
+            <span class="seal">C <b>♥</b> A</span>
+          </span>
+        </button>
+      </div>
+      <p class="hint">Toca el sobre para descubrirla <span aria-hidden="true">✦</span></p>
+    </section>
+
+    <section class="invitation" id="invitation" aria-labelledby="card-title" aria-hidden="true">
+      <article class="card">
+        <div class="card-top"><span class="ornament">✦</span><span class="card-kicker">Una noche para recordar</span><span class="ornament">✦</span></div>
+        <h2 id="card-title">Para <em>Alisson</em></h2>
+        <div class="rule"></div>
+        <div class="letter-copy">
+          <p class="salutation">Mi amor:</p>
+          <p>Hay momentos que se vuelven inolvidables por el lugar, por la música y, especialmente, por la persona con quien los vivimos.</p>
+          <p>Quiero invitarte a una noche en la que el piano diga todo aquello que a veces las palabras no alcanzan a expresar.</p>
+          <p>Quiero compartir contigo una velada especial, disfrutar cada melodía a tu lado y guardar este momento como uno de nuestros recuerdos más bonitos.</p>
+          <p class="question">¿Me acompañas a vivir esta cita conmigo?</p>
+        </div>
+        <div class="event-details">
+          <p class="event-label">Concierto de lanzamiento</p>
+          <h3>43.º Festival Internacional<br>de Piano</h3>
+          <p class="artist">Shun-Fu Chang <span>·</span> Taiwán</p>
+          <div class="event-grid">
+            <div><span class="detail-label">Cuándo</span><strong>Viernes, 17 de julio<br>de 2026 · 7:00 p. m.</strong></div>
+            <div><span class="detail-label">Dónde</span><strong>Auditorio<br>Luis A. Calvo</strong></div>
+          </div>
+        </div>
+        <p class="closing">Quiero que esta sea una de esas noches que guardemos para siempre en nuestra memoria.</p>
+        <p class="signature">Con todo mi amor,<br><em>Carlos</em></p>
+        <div class="piano-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><i></i></div>
+        <div class="response" id="response">
+          <button class="primary-button" id="yes-button" type="button">Sí, quiero vivir esta noche contigo <span>♥</span></button>
+          <div class="accepted" id="accepted" aria-live="polite" hidden>
+            <p>Entonces tenemos una cita, mi amor.<br><em>Será una noche inolvidable ❤️🎹</em></p>
+            <div class="actions"><a class="secondary-button whatsapp" id="whatsapp" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a><a class="secondary-button" href="evento.ics" download>Guardar nuestra cita</a></div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Activar sonido suave" aria-pressed="false"><span>♩</span><b>Sonido suave</b></button>
+    <div class="live-region" id="live-region" aria-live="polite"></div>
+  </main>
+  <noscript><div class="noscript">Esta carta necesita JavaScript activado para abrirse. Puedes volver a intentarlo con JavaScript habilitado.</div></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
